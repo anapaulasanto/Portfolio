@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, main {
+    overflow-x: hidden;
+}
+
+/*------ HEADER ------- */
+header {
+    display: flex;
+    background-image: url(/src/images/about-bg2.jpg);
+    border-bottom: 1px solid blueviolet;
+    height: 100vh;
+    transition: background .5s;
+}
+
+/* BTN MODE */
+
+nav .btn-mode {
+    width: 75px;
+    height: 40px;
+    border: 3px solid rgb(119, 87, 129);
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    left: 1140px;
+} 
+
+.btn-mode:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(233, 226, 226);
+    border-radius: 50%;
+    top: 2px;
+    left: 17px;
+    transform: translate(-50%);
+    transition: left .5s;
+}
+
+.btn-mode.active:before {
+    left: 50px;
+    background-color: #310d3a;
+}
+
+header.active {
+    background-image: url(/src/images/about-bg1.jpg);
+}
+
+.about-title.active {
+    color: #000;
+}
+
+.main.active {
+    background-color: wheat;
+}
+
+/* FIM BTN MODE */
+
+/* SEÇÃO HEADER */
+
+header .about-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px 0 7%;
+    gap: 70px;
+}
+
+header .about-header img {
+    max-width: 320px;
+    border-radius: 50%;
+    box-shadow: 0 1px 40px rgb(102, 57, 148);
+}
+
+header .about-header .about-text {
+    color: white;
+    font-family: var(--font-roboto);
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: 470px;
+}
+
+.about-text h1 {
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    font-size: 2.3em;
+    line-height: 50px;
+}
+
+.about-text .about-title {
+    color: #d184f0;
+    width: 500px;
+    font-size: .89em;
+}
+
+/* BTN-SOBRE */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 20px rgb(86, 39, 129);
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #420404, #974807, #666409, #286e0c, #0b8a75, #0d1e74, #3b0e6b, #800b66, #440808);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8825af85;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* FIM BTN-SOBRE */
+
+/* ICONES NAV*/
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1180px;
+    
+}
+
+.box {
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.box:hover {
+    width: 150px;
+    background-color: #310d3a;
+    border-radius: 35px;
+    color: rgb(207, 205, 205);
+    box-shadow: 0 0 50px purple;
+}
+
+.navbar p {
+    transform: translate(60px);
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s ease;
+    background-color: rgb(100, 30, 117);
+}
+
+.box:hover .icon {
+    background-color: white;
+    color: #000;
+    box-shadow: 0 0 20px paleturquoise;
+}
+ /* FIM ICONES NAV */
+
+ /* SEÇÃO SOBRE MIM */
+
+ main {
+    background-color: rgb(15, 15, 15);
+ }
+
+ .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+ }
+
+ .about-me .text-about-me {
+    color: white;
+    text-align: center;
+    margin-top: 20px; 
+ }
+
+ .about-me .text-about-me h2 {
+    font-size: 3em;
+    color: #ba60cc;
+ }
+
+ .about-me .text-about-me p {
+    width: 900px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+ }
+
+ /* BTN CV */
+
+ #btn-cv {
+    margin-top: 40px;
+    padding: 15px 45px;
+    border-radius: 40px;
+    background-color:  #8825af85;
+    color: white;
+    box-shadow: 0 0 10px rgb(53, 11, 66);
+ }
+
+ #btn-cv:hover {
+    background-color:  #320a4285;
+    transition: ease-in-out .6s;
+    box-shadow: 0 0 30px rgb(134, 26, 167);
+ }
+
+ /* SEÇÃO PROJETOS */
+
+ .projects .text-projects .title-projects {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #ba60cc;
+    margin-top: 140px;
+ }
+
+ .projects .subtitle-projects {
+    margin-bottom: 140px;
+    text-align: center;
+    color: rgb(160, 157, 157);
+    letter-spacing: 4px;
+ }
+
+ .card {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #38134928;
+    box-shadow:  0 35px 88px rgba(0, 0, 0, .15);
+    transition: 0.5s;
+ }
+
+ .card:hover{
+    height: 300px;
+ }
+
+ .card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 10px;
+    transition: 0.5s;
+    right: 140px;
+ }
+
+ .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    right: 120px;
+ }
+
+ .card .img-box .img-card {
+    width: 100%;
+    height: 100%;
+ }
+
+ .icons-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+ }
+
+ .icon-card {
+    width: 20px;   
+ }
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: .5s;
+    color: white;
+    font-size:.7em;
+}
+
+.card .content h2 {
+    letter-spacing: 1.5px;
+}
+
+.card .content p {
+    font-size: 1.1em;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .read-more {
+    background: linear-gradient(90deg, blueviolet, purple);
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow:  0 0 20px rgb(96, 23, 139);
+}
+
+.card .read-more:hover {
+    background: linear-gradient(90deg, rgb(159, 88, 226), rgb(185, 8, 185));
+}
+
+ .projects .cards-projects {
+    display: grid;
+    align-items: center;
+    justify-items:center;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 16px;
+    margin-top: 40px;
+    margin-right: 100px;
+ }
+
+.projects .cards-projects img {
+    border-radius: 10px;
+    box-shadow: 0 1px 80px rgb(60, 27, 92);
+    object-fit: cover;
+}
+
+.projects .cards-projects #img-card1 {
+    width: 380px;
+    height: 250px;  
+}
+.projects .cards-projects #img-card2 {
+    width: 380px;
+    height: 250px;
+}
+
+.projects .cards-projects #img-card3 {
+    width: 380px;
+    height: 250px;
+    object-fit: fill;
+}
+ 
+.projects .cards-projects #img-card4 {
+    width: 380px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.projects .cards-projects #img-card5 {
+    width: 380px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.card5 {
+    margin-left: 120%;
+}
+
+/* SECTION CONTATO */
+
+.contato .title-contato {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #ba60cc;
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.contato .subtitle-contato {
+    margin-bottom: 140px;
+    text-align: center;
+    color: rgb(160, 157, 157);
+    letter-spacing: 4px;
+}
+
+.contato .btn-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-contato .button-contato:hover {
+    box-shadow: 0px 1px 30px rgb(80, 13, 80);
+    transition: all .4s; 
+    content: '';
+    margin-left: 20px;
+}
+
+.contato .btn-contato > button {
+    background-color: rgb(34, 33, 33);
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.63);
+    transition: all .4s; 
+}
+
+/* FOOTER */ 
+
+footer {
+    border-top: 1px solid rgb(78, 9, 78);
+    margin-top: 140px;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(196, 192, 192);
+    letter-spacing: 3px;
+    font-size: .9em;
+}
+
+footer p > span {
+    color: rgb(149, 56, 192);
+}
+ 
+/* BARRA DE SCROLL */
+ *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(17, 17, 17);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(77, 19, 92);
+    border-radius: 20px;
+    border: 3px solid rgb(175, 70, 207);
+  }
+
+ 
