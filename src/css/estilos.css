@@ -46,6 +46,7 @@ header .bg-header {
     z-index: 0;
     height: 100vh;
     border-bottom: 1px solid purple;
+    object-fit: cover;
 }
 
 /* BTN MODE */
@@ -142,6 +143,7 @@ header .about-header img {
     border-radius: 50%;
     box-shadow: 0 1px 40px rgb(102, 57, 148);
     z-index: 1;
+    object-fit: cover;
 }
 
 header .about-header .about-text {
@@ -240,8 +242,7 @@ header .about-header .about-text {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 1180px;
-    
+    left: 1180px;   
 }
 
 .box {
@@ -625,5 +626,8 @@ footer p > span {
     border-radius: 20px;
     border: 3px solid rgb(175, 70, 207);
   }
+
+
+  
 
  

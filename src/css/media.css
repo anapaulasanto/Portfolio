@@ -1,0 +1,162 @@
+@media screen and (max-width:1260px) {
+
+    nav .btn-mode {
+        left: 180px;
+    } 
+
+    .navbar {
+        display: none;  
+    }
+
+    .glow-on-hover {
+        width: 420px;
+        height: 60px;
+        font-size: 1.1em;
+    }
+
+    .about-me .text-about-me .down-title{
+        left: 30%;
+        top: 104%;
+     }
+
+     #btn-cv {
+        margin-top: 80px;
+        padding: 25px 70px;
+        font-size: 1.2em;
+     }
+
+     .down-title-projects {
+        left: 25%;
+        bottom: 18%;
+     }
+
+     .down-contato {
+        left: 22%;
+        top: 45px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    nav .btn-mode {
+        left: 30px;
+    } 
+
+    header .about-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    header .about-header img {
+        max-width: 300px;
+    }
+
+    .glow-on-hover {
+        width: 450px;
+        height: 65px;
+        font-size: 1.1em;
+    }
+
+    .about-me .text-about-me .down-title{
+        left: 25%;
+        top: 106%;
+     }
+
+     .about-me .text-about-me .subtitle-about-me {
+        width: 650px;
+        text-align: justify;
+        font-size: 1.3em;
+     }
+
+     #btn-cv {
+        margin-top: 80px;
+        padding: 25px 70px;
+        font-size: 1.2em;
+     }
+
+     .down-title-projects {
+        left: 19%;
+        bottom: 20%;
+     }
+
+     .projects .cards-projects {
+        display: grid;
+        align-items: center;
+        justify-items:center;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin: 0 auto;
+     }
+
+     .card5 {
+        margin-left: 0%;
+    }
+
+    .down-contato {
+        left: 15%;
+        top: 45px;
+        letter-spacing: 0px;
+    }
+    }
+
+    @media screen and (max-width: 430px) {
+
+        nav .btn-mode {
+            left: 10px;
+        }
+
+        header .about-header {
+            padding-left: 0%;
+            margin-top: 28%;
+            margin-bottom: 100px;
+        }
+
+        header .container {
+            position: initial;
+        }
+
+        header .about-header img {
+            max-width: 290px;
+            margin-top: 100px;
+            margin-right: 40px;
+        }
+
+        header .about-header {
+            gap: 20px;
+        }
+
+        header .about-header .about-text {
+            width: 330px;
+            z-index: 1;
+            font-size: 1em;
+            margin: 0 auto;
+        }
+
+        .about-text h1 {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            letter-spacing: 0;
+            margin-right: 50px;
+        }
+
+        .light-mode {
+            color: rgb(202, 158, 211) !important;
+        }
+        
+        .about-text .about-title {
+            color: rgb(155, 95, 179);
+            width: 300px;
+            font-size: .90em;
+        }
+
+        .glow-on-hover {
+            width: 250px;
+            height: 65px;
+            font-size: 1.1em;
+            margin-bottom: 80px;
+        }
+    
+    }
