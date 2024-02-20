@@ -37,6 +37,7 @@ header {
     border-bottom: 1px solid blueviolet;
     height: 100vh;
     transition: background .5s;
+    width: 100vw;
 }
 
 /* BTN MODE */
@@ -335,6 +336,10 @@ header .about-header .about-text {
 
  /* SEÇÃO PROJETOS */
 
+ .projects .text-projects {
+    position: relative;
+ }
+
  .projects .text-projects .title-projects {
     color: white;
     text-align: center;
@@ -354,7 +359,7 @@ header .about-header .about-text {
     color: rgb(29, 29, 29);
     position: absolute;
     left: 32%;
-    top: 238%;
+    bottom: 20%;
     z-index: 0;
     letter-spacing: 10px;
  }
@@ -505,6 +510,10 @@ header .about-header .about-text {
 
 /* SECTION CONTATO */
 
+.contato .text-contato {
+    position: relative;
+}
+
 .contato .title-contato {
     text-align: center;
     font-size: 3.5em;
@@ -531,7 +540,7 @@ header .about-header .about-text {
     letter-spacing: 2px;
     position: absolute;
     left: 30%;
-    top: 486%;
+    top: 50px;
     z-index: 0;
 }
 
