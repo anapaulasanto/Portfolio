@@ -32,12 +32,19 @@ html, body, main {
 /*------ HEADER ------- */
 header {
     display: flex;
-    background-image: url(/src/images/about-bg2.jpg);
-    background-attachment: fixed;
+    position: relative;
     border-bottom: 1px solid blueviolet;
     height: 100vh;
     transition: background .5s;
+    width: 100%;
+    z-index: 1;
+}
+
+header .bg-header {
     width: 100vw;
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
 }
 
 /* BTN MODE */
@@ -123,6 +130,7 @@ header .about-header img {
     max-width: 350px;
     border-radius: 50%;
     box-shadow: 0 1px 40px rgb(102, 57, 148);
+    z-index: 1;
 }
 
 header .about-header .about-text {
@@ -134,6 +142,7 @@ header .about-header .about-text {
     align-items: flex-start;
     justify-content:center;
     width: 470px;
+    z-index: 1;
 }
 
 .about-text h1 {
