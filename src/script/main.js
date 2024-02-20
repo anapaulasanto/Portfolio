@@ -15,6 +15,7 @@ const subtitleProjects = document.querySelector('.subtitle-projects');
 const titleContato = document.querySelector('.title-contato');
 const downContato = document.querySelector('.down-contato');
 const subtitleContato = document.querySelector('.subtitle-contato');
+const bgHeader = document.querySelector('.bg-header');
 
 btn.onclick = function () {
     this.classList.toggle('active')
@@ -32,5 +33,7 @@ btn.onclick = function () {
     titleContato.classList.toggle('title-about-me-light')
     downContato.classList.toggle('down-title-light')
     subtitleContato.classList.toggle('subtitle-light')
+    bgHeader.classList.toggle('bg-header-light')
+
 }
 
