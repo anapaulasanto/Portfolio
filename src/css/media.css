@@ -162,11 +162,23 @@
 }
 
 @media screen and (max-width: 428px) {
+    header img {
+        width: 220px;
+    }
+
+    header .about-text h1 {
+        font-size: 1.5em;
+    }
+
     header .about-header {
         padding-left: 0%;
         margin-top: 28%;
         margin-bottom: 100px;
         margin-left: 50px;
+    }
+
+    .about-me .text-about-me .title-about-me {
+        font-size: 2.8em;
     }
 
     .about-me .text-about-me .down-title {
@@ -175,15 +187,68 @@
     }
 
     .about-me .text-about-me .subtitle-about-me {
-        width: 350px;
+        width: 280px;
         margin: 0 auto;
     }
+
+    .about-me .text-about-me .subtitle-about-me {
+        font-size: 1.1em;
+    }
+
+    .projects .subtitle-projects {
+        width: 280px;
+        margin: 50px auto;
+    }
+
+    .projects .text-projects .title-projects {
+        font-size: 2.8em;
+    }
+
+    .projects .cards-projects #img-card1 {
+        width: 300px;
+        height: 250px;
+        margin-left: 26px;
+    }
+
+    .projects .cards-projects #img-card2 {
+        width: 300px;
+        height: 250px;
+        margin-left: 26px;
+    }
+
+    .projects .cards-projects #img-card3 {
+        width: 300px;
+        height: 250px;
+        margin-left: 26px;
+    }
+
+    .projects .cards-projects #img-card4 {
+        width: 300px;
+        height: 250px;
+        margin-left: 26px;
+    }
+
+    .projects .cards-projects #img-card5 {
+        width: 300px;
+        height: 250px;
+        margin-left: 26px;
+    }
+
 
     .down-title-projects {
         font-size: 3em;
         left: 7%;
         bottom: 45%;
 
+    }
+
+    .contato .subtitle-contato {
+        width: 290px;
+        margin: 90px auto;
+    }
+
+    .contato .title-contato {
+        font-size: 2.8em;
     }
 
     .down-contato {
