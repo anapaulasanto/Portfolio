@@ -65,7 +65,7 @@ nav .btn-mode {
     margin-top: 20px;
     left: 1185px;
     box-shadow: 0 1px 20px rgba(156, 86, 156, 0.63);
-} 
+}
 
 .btn-mode:before {
     content: '';
@@ -104,7 +104,7 @@ nav .btn-mode {
 }
 
 .btn-cv-light {
-    background-color:  #320544fa !important;
+    background-color: #320544fa !important;
     box-shadow: 0 0 40px rgb(129, 19, 163) !important;
 }
 
@@ -153,7 +153,7 @@ header .about-header .about-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content:center;
+    justify-content: center;
     width: 470px;
     z-index: 1;
 }
@@ -192,7 +192,7 @@ header .about-header .about-text {
     background: linear-gradient(45deg, #420404, #974807, #666409, #286e0c, #0b8a75, #0d1e74, #3b0e6b, #800b66, #440808);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -229,9 +229,17 @@ header .about-header .about-text {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 /* FIM BTN-SOBRE */
@@ -242,7 +250,7 @@ header .about-header .about-text {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 1180px;   
+    left: 1180px;
 }
 
 .box {
@@ -291,37 +299,38 @@ header .about-header .about-text {
     color: #000;
     box-shadow: 0 0 20px paleturquoise;
 }
- /* FIM ICONES NAV */
 
- /* SEÇÃO SOBRE MIM */
+/* FIM ICONES NAV */
 
- main {
+/* SEÇÃO SOBRE MIM */
+
+main {
     background-color: rgb(15, 15, 15);
- }
+}
 
- .about-me {
+.about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
- }
+    align-items: center;
+}
 
- .about-me .text-about-me {
+.about-me .text-about-me {
     color: white;
     text-align: center;
-    margin-top: 70px; 
- }
+    margin-top: 70px;
+}
 
- .about-me .text-about-me .title-about-me{
+.about-me .text-about-me .title-about-me {
     font-size: 3.5em;
     color: #ca77df;
     letter-spacing: 5px;
     z-index: 9999;
     position: relative;
     margin-bottom: 70px;
- }
+}
 
- .about-me .text-about-me .down-title{
+.about-me .text-about-me .down-title {
     font-size: 6em;
     color: #302f2f98;
     position: absolute;
@@ -329,41 +338,41 @@ header .about-header .about-text {
     top: 106%;
     z-index: 0;
     letter-spacing: 10px;
- }
+}
 
- .about-me .text-about-me .subtitle-about-me {
+.about-me .text-about-me .subtitle-about-me {
     width: 750px;
     text-align: justify;
     font-size: 1.2em;
     margin-top: 30px;
     letter-spacing: 1.3px;
     line-height: 40px;
- }
+}
 
- /* BTN CV */
+/* BTN CV */
 
- #btn-cv {
+#btn-cv {
     margin-top: 80px;
     padding: 15px 45px;
     border-radius: 40px;
-    background-color:  #8825af85;
+    background-color: #8825af85;
     color: white;
     box-shadow: 0 0 10px rgb(53, 11, 66);
- }
+}
 
- #btn-cv:hover {
-    background-color:  #320a4285;
+#btn-cv:hover {
+    background-color: #320a4285;
     transition: ease-in-out .6s;
     box-shadow: 0 0 30px rgb(134, 26, 167);
- }
+}
 
- /* SEÇÃO PROJETOS */
+/* SEÇÃO PROJETOS */
 
- .projects .text-projects {
+.projects .text-projects {
     position: relative;
- }
+}
 
- .projects .text-projects .title-projects {
+.projects .text-projects .title-projects {
     color: white;
     text-align: center;
     font-size: 3.5em;
@@ -375,9 +384,9 @@ header .about-header .about-text {
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
- }
+}
 
- .down-title-projects {
+.down-title-projects {
     font-size: 5em;
     color: rgb(29, 29, 29);
     position: absolute;
@@ -385,16 +394,16 @@ header .about-header .about-text {
     bottom: 20%;
     z-index: 0;
     letter-spacing: 10px;
- }
+}
 
- .projects .subtitle-projects {
+.projects .subtitle-projects {
     margin-bottom: 140px;
     text-align: center;
     color: rgb(160, 157, 157);
     letter-spacing: 4px;
- }
+}
 
- .card {
+.card {
     display: flex;
     justify-content: center;
     width: 400px;
@@ -402,44 +411,44 @@ header .about-header .about-text {
     position: relative;
     border-radius: 20px;
     background-color: #38134928;
-    box-shadow:  0 35px 88px rgba(0, 0, 0, .15);
+    box-shadow: 0 35px 88px rgba(0, 0, 0, .15);
     transition: 0.5s;
- }
+}
 
- .card:hover{
+.card:hover {
     height: 300px;
- }
+}
 
- .card .img-box {
+.card .img-box {
     position: absolute;
     width: 250px;
     height: auto;
     top: 10px;
     transition: 0.5s;
     right: 140px;
- }
+}
 
- .card:hover .img-box {
+.card:hover .img-box {
     top: -100px;
     scale: 0.75;
     right: 120px;
- }
+}
 
- .card .img-box .img-card {
+.card .img-box .img-card {
     width: 100%;
     height: 100%;
- }
+}
 
- .icons-card {
+.icons-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 6px;
- }
+}
 
- .icon-card {
-    width: 20px;   
- }
+.icon-card {
+    width: 20px;
+}
 
 .card .content {
     display: flex;
@@ -454,7 +463,7 @@ header .about-header .about-text {
     overflow: hidden;
     transition: .5s;
     color: white;
-    font-size:.7em;
+    font-size: .7em;
 }
 
 .card .content h2 {
@@ -476,23 +485,23 @@ header .about-header .about-text {
     text-decoration: none;
     border-radius: 8px;
     color: white;
-    box-shadow:  0 0 20px rgb(96, 23, 139);
+    box-shadow: 0 0 20px rgb(96, 23, 139);
 }
 
 .card .read-more:hover {
     background: linear-gradient(90deg, rgb(159, 88, 226), rgb(185, 8, 185));
 }
 
- .projects .cards-projects {
+.projects .cards-projects {
     display: grid;
     align-items: center;
-    justify-items:center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     margin-bottom: 16px;
     margin-top: 40px;
     margin-right: 100px;
- }
+}
 
 .projects .cards-projects img {
     border-radius: 10px;
@@ -502,8 +511,9 @@ header .about-header .about-text {
 
 .projects .cards-projects #img-card1 {
     width: 380px;
-    height: 250px;  
+    height: 250px;
 }
+
 .projects .cards-projects #img-card2 {
     width: 380px;
     height: 250px;
@@ -514,7 +524,7 @@ header .about-header .about-text {
     height: 250px;
     object-fit: fill;
 }
- 
+
 .projects .cards-projects #img-card4 {
     width: 380px;
     height: 250px;
@@ -529,6 +539,11 @@ header .about-header .about-text {
 
 .card5 {
     margin-left: 120%;
+}
+
+#btn-ver-mais {
+    display: flex;
+    justify-content: center;
 }
 
 /* SECTION CONTATO */
@@ -578,22 +593,22 @@ header .about-header .about-text {
 
 .btn-contato .button-contato:hover {
     box-shadow: 0px 1px 30px rgb(80, 13, 80);
-    transition: all .4s; 
+    transition: all .4s;
     content: '';
     margin-left: 20px;
 }
 
-.contato .btn-contato > button {
+.contato .btn-contato>button {
     background-color: rgb(34, 33, 33);
     padding: 20px;
     border-radius: 30px;
     color: white;
     font-size: 1.2em;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.63);
-    transition: all .4s; 
+    transition: all .4s;
 }
 
-/* FOOTER */ 
+/* FOOTER */
 
 footer {
     border-top: 1px solid rgb(78, 9, 78);
@@ -608,26 +623,21 @@ footer p {
     font-size: .9em;
 }
 
-footer p > span {
+footer p>span {
     color: rgb(149, 56, 192);
 }
- 
+
 /* BARRA DE SCROLL */
- *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: rgb(17, 17, 17);
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: rgb(77, 19, 92);
     border-radius: 20px;
     border: 3px solid rgb(175, 70, 207);
-  }
-
-
-  
-
- 
+}
